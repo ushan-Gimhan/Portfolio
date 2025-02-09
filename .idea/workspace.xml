@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9c5705d-19a5-46da-b7b8-10595a3ac8db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Html/Portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Portfolio.html" afterDir="false" />
-    </list>
+    <list default="true" id="d9c5705d-19a5-46da-b7b8-10595a3ac8db" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +43,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Portfolio.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -64,8 +62,19 @@
       <recent name="C:\Users\ushan\OneDrive\Desktop\assignment links\Portfolio\assests\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ushan\OneDrive\Desktop\assignment links\Portfolio" />
       <recent name="C:\Users\ushan\OneDrive\Desktop\assignment links\Portfolio\Html" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Portfolio.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Portfolio/Html/Portfolio.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Portfolio.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -86,6 +95,7 @@
       <workItem from="1737728198717" duration="78000" />
       <workItem from="1737728877715" duration="1956000" />
       <workItem from="1738850173512" duration="6618000" />
+      <workItem from="1738922308491" duration="10307000" />
     </task>
     <servers />
   </component>
