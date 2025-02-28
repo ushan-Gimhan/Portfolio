@@ -1,0 +1,15 @@
+section.profile{
+    background: linear-gradient(to bottom, white, black);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section.profile h2 {
+    color: blue;
+    font-weight: bold;
+    left: 30px;
+    right: 30px;
+    text-decoration-color: black;
+    display: inline-block;
+    border: 2px solid blue;
+}

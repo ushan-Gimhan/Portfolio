@@ -1,0 +1,11 @@
+
+section.aboutMe{
+    background: linear-gradient(to bottom, black, white);
+}
+
+section h2 {
+    color: blue;
+    font-weight: bold;
+    left: 30px;
+    right: 30px;
+}
