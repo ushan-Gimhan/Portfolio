@@ -1,21 +1,29 @@
-section{
+section>div.homePage{
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+section>div.homePage>img{
+    right: 0;
+    position: absolute;
 }
 
-section > nav {
+section >header> nav {
     background: black;
     right: 50vw;
     text-align: right;
     padding: 10px 20px;
     height: 40px;
 }
-section>nav>a{
+section>header>nav>a{
     text-decoration: none;
     padding-right: 10px;
     font-size: 18px;
     color: white;
     font-weight: bold;
 }
-section>nav>img{
+section>header>nav>img{
     background-color: white;
     width: 40px;
     height: 40px;

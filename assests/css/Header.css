@@ -1,0 +1,63 @@
+section>header.hero{
+    height: 12.5%;
+    /*background: linear-gradient(90deg, #121314, #22262b 59%, #31363b);*/
+    background: black;
+    color: #fff;
+    display: grid;
+    grid-template-areas: "logo nav";
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    border-bottom: 1px solid #b8c6db;
+    align-content: center;
+    margin:auto;
+}
+section>header>div.logo{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+/*div{*/
+/*    display: block;*/
+/*    unicode-bidi: isolate;*/
+/*}*/
+section>header>div.menu {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+
+
+section>header>div.menu>nav>a {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+    margin: auto;
+}
+.menuIcon{
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    margin: auto;
+    display: none;
+}
+@media all and (max-width: 920px) {
+    .menu{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+}
+@media all and (max-width: 920px) {
+
+}
+
+.hover {
+    background: #2ecc71;
+    color: white;
+}

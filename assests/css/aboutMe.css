@@ -1,11 +1,50 @@
 
-section.aboutMe{
+.aboutMe{
     background: linear-gradient(to bottom, black, white);
 }
+/*.about{*/
+/*    display: grid;*/
+/*}*/
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.about>div{
+    width: 300px;
+    height: 300px;
+    border: 3px solid sienna;
+    position: relative;
+}
+.about>div.paragraph{
+    width: 90%;
+    font-weight: bold;
+    color: white;
+}
+.about>div>img{
+    /*width: 386px;*/
+    /*aspect-ratio: 1/1;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border: 5px solid blue;
+    position: absolute;
+}
+.about>div>p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
 
-section h2 {
+section.aboutMe>h1 {
     color: blue;
     font-weight: bold;
     left: 30px;
     right: 30px;
+    -webkit-text-stroke: 1px white;
 }
