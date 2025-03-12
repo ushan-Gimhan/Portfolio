@@ -1,57 +1,116 @@
-section>div.homePage{
-    text-align: center;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+.homePage{
+    font-family: "Fira Code", monospace;
+    height: 90vh;
     position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db, #f5f7fa 74%);
 }
-section>div.homePage>img{
-    right: 0;
-    position: absolute;
-}
+/*.homePage>img{*/
+/*    right: 0;*/
+/*    position: absolute;*/
+/*}*/
 
-section >header> nav {
-    background: black;
-    right: 50vw;
-    text-align: right;
-    padding: 10px 20px;
-    height: 40px;
+/*section >header> nav {*/
+/*    background: black;*/
+/*    right: 50vw;*/
+/*    text-align: right;*/
+/*    padding: 10px 20px;*/
+/*    height: 40px;*/
+/*}*/
+/*section>header>nav>a{*/
+/*    text-decoration: none;*/
+/*    padding-right: 10px;*/
+/*    font-size: 18px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*}*/
+/*section>header>nav>img{*/
+/*    background-color: white;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    position: absolute;*/
+/*    top: 5px;*/
+/*    left: 10px;*/
+/*}*/
+/*body>section:first-child(1){*/
+/*    background: darkred;*/
+/*}*/
+/*section.homePage>p{*/
+/*    color: blue;*/
+/*    background: white;*/
+/*    font-weight: bold;*/
+/*    left: 300px;*/
+/*    right: 300px;*/
+/*    top: 20px;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*section>p>h1{*/
+/*    color: black;*/
+/*    font-weight: bold;*/
+/*}*/
+/*body>section.homePage>div>img{*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*}*/
+.middleLine{
+    width: 35vw;
+    height: 2px;
+    background-color: blue;
+    border: none;
+    margin: 20px auto;
+    animation: fadeInAnimation 3s;
 }
-section>header>nav>a{
-    text-decoration: none;
-    padding-right: 10px;
-    font-size: 18px;
-    color: white;
+.firstLine{
     font-weight: bold;
-}
-section>header>nav>img{
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-body>section:first-child(1){
-    background: darkred;
-}
-section.homePage>p{
+    font-size: 15px;
     color: blue;
-    background: white;
-    font-weight: bold;
-    left: 300px;
-    right: 300px;
-    top: 20px;
-    bottom: 0;
-    margin: auto;
 }
-section>p>h1{
+.secondLine{
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
     color: black;
-    font-weight: bold;
 }
-body>section.homePage>div>img{
+.thirdLine{
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
+    color: black;
+}
+.forthLine{
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
+    color: black;
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    right: 0;
-    left: 0;
+    left: 5%;
     bottom: 0;
 }
+.homePage>div.verticalBar{
+    border-left:3px solid blue;
+    left: 5%;
+    height: 25vh;
+    width: 2px;
+    background: blue;
+    position: absolute;
+}
+@media all and (max-width: 920px) {
+    .leftSide{
+        flex-direction: column;
+    }
+    .nameTag{
+        font-size: 20px;
+    }
 
+}

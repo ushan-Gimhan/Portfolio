@@ -32,7 +32,7 @@ section>header>div.menu {
 section>header>div.menu>nav>a {
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px;
     text-decoration: none;
     margin: auto;
@@ -56,8 +56,12 @@ section>header>div.menu>nav>a {
 @media all and (max-width: 920px) {
 
 }
-
-.hover {
-    background: #2ecc71;
-    color: white;
+.menu>nav>a:hover{
+    color: blue;
+    border: 3px solid black;
 }
+img:hover{
+    opacity: 1;
+    border: 5px solid blue;
+}
+
