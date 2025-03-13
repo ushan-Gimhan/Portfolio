@@ -1,3 +1,6 @@
+/*body:hover{*/
+/*    cursor: url(''), auto;*/
+/*}*/
 section>header.hero{
     height: 12.5%;
     /*background: linear-gradient(90deg, #121314, #22262b 59%, #31363b);*/
@@ -26,6 +29,8 @@ section>header>div.menu {
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
+    background: linear-gradient(90deg, #121314, #22262b 59%, #31363b);
+    padding: 20px;
 }
 
 
@@ -58,10 +63,14 @@ section>header>div.menu>nav>a {
 }
 .menu>nav>a:hover{
     color: blue;
-    border: 3px solid black;
 }
 img:hover{
-    opacity: 1;
     border: 5px solid blue;
+
 }
+/*.menu:hover{*/
+/*    background: black;*/
+/*    color: white;*/
+/*    border-radius: 5px;*/
+/*}*/
 

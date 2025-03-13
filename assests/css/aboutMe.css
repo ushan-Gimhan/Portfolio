@@ -1,53 +1,125 @@
-
-.aboutMe{
-    background: linear-gradient(to bottom, black, white);
+.aboutMe {
+    background: linear-gradient(to bottom, black, black, white);
+    width: 100%;
 }
-/*.about{*/
-/*    display: grid;*/
-/*}*/
-.about{
+
+.about {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.about>div{
-    width: 300px;
-    height: 300px;
-    border: 3px solid sienna;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
-.about>div.paragraph{
+
+.about > div {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.about > div.paragraph {
     width: 90%;
+    height: 60vh;
     font-weight: bold;
     color: white;
+    font-size: 20px;
+    position: relative;
 }
-.about>div>img{
-    /*width: 386px;*/
-    /*aspect-ratio: 1/1;*/
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    border: 5px solid blue;
-    position: absolute;
+.about > div.im {
+    width: 100%;
+    height: 60vh;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    position: relative;
 }
-.about>div>p{
+.paragraph>p{
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
     margin: auto;
 }
 
-section.aboutMe>h1 {
+.about > div > img.myPic {
+    width: 100%;
+    height: 70vh;
+    max-width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid blue;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about > div > img:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarges image on hover */
+}
+
+.about > div > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+section.aboutMe > h1 {
     color: blue;
     font-weight: bold;
-    left: 30px;
-    right: 30px;
-    -webkit-text-stroke: 1px white;
+    margin-bottom: 20px;
 }
-section{
+.im>img{
+    position: absolute;
+    margin: auto;
+}
+section {
     overflow: hidden;
+}
+
+/* RESPONSIVE DESIGN */
+@media all and (max-width: 920px) {
+    .about {
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    .about > div {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+    }
+
+    .about > div.paragraph {
+        font-size: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    .about > div.paragraph>p {
+        bottom: 0;
+        margin: auto;
+    }
+
+    .about > div > img {
+        width: 20px;
+    }
+    .h1{
+        text-align: center;
+    }
+    .aboutMe {
+        background: linear-gradient(to bottom, black, white,, black);
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .about > div.paragraph {
+        font-size: 18px;
+    }
+
+    .about > div > img {
+        max-width: 200px;
+    }
 }
