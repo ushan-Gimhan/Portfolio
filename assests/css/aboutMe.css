@@ -54,7 +54,7 @@
 }
 
 .about > div > img:hover {
-    transform: translate(-50%, -50%) scale(1.1); /* Slightly enlarges image on hover */
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .about > div > p {
@@ -79,7 +79,6 @@ section {
     overflow: hidden;
 }
 
-/* RESPONSIVE DESIGN */
 @media all and (max-width: 920px) {
     .about {
         display: flex;
