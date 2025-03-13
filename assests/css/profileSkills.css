@@ -1,15 +1,67 @@
-section.profile{
+.profile{
+    width: 100%;
     background: linear-gradient(to bottom, white, black);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 section.profile h2 {
-    color: blue;
+    color: black;
     font-weight: bold;
     left: 30px;
     right: 30px;
     text-decoration-color: black;
     display: inline-block;
     border: 2px solid blue;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+.profileSec{
+    display: flex;
+    /*grid-template-columns: repeat(3,1fr);*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.profileSec>div.skillOne{
+    width: 300px;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background: rgba(18, 19, 20, 0.5);
+    margin: auto;
+}
+.profileSec>div.skillTwo{
+    width: 300px;
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background: rgba(18, 19, 20, 0.5);
+    margin: auto;
+}
+.profileSec>div.skillThree{
+    width: 300px;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background: rgba(18, 19, 20, 0.5);
+    margin: auto;
+}
+h2{
+    color: black;
+}
+.profileSec>div>p{
+    color: white;
+    font-weight: bold;
+}
+@media all and (max-width: 600px) {
+    .profileSec{
+        flex-direction: column;
+    }
 }

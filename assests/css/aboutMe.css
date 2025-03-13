@@ -109,7 +109,7 @@ section {
         text-align: center;
     }
     .aboutMe {
-        background: linear-gradient(to bottom, black, white,, black);
+        background: linear-gradient(to bottom, black, white, black);
         width: 100%;
     }
 }
