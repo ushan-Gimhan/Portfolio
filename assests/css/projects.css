@@ -1,6 +1,19 @@
-section.project{
-    background:linear-gradient(to bottom, white, black);
+.pro{
+    background:linear-gradient(to bottom, white,black,white, black);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+section>h1{
+    color: blue;
+    text-align: center;
+}
+.pro>div{
+    display: grid;
+    border: 3px solid sienna;
+    grid-template-columns: var(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.project{
+    border: 3px solid rebeccapurple;
 }
