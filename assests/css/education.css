@@ -1,6 +1,31 @@
-section.education{
+.education{
     background: linear-gradient(to bottom, black, white);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-weight: bold;
+}
+.education>div{
+    display: flex;
+    /*grid-template-columns: repeat(3,1fr);*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    position: relative;
+}
+.education>div>div{
+    display: flex;
+    width: 40vw;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    background: rgba(18, 19, 20, 0.5);
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+

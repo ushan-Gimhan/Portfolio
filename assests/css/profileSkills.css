@@ -32,7 +32,9 @@ h1{
     text-align: center;
     padding: 20px;
     position: relative;
+    border-radius: 8px 8px 8px 8px;
     background: rgba(18, 19, 20, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     margin: auto;
 }
 .profileSec>div.skillTwo{
@@ -41,7 +43,9 @@ h1{
     text-align: center;
     padding: 20px;
     position: relative;
+    border-radius: 8px 8px 8px 8px;
     background: rgba(18, 19, 20, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     margin: auto;
 }
 .profileSec>div.skillThree{
@@ -50,7 +54,9 @@ h1{
     text-align: center;
     padding: 20px;
     position: relative;
+    border-radius: 8px 8px 8px 8px;
     background: rgba(18, 19, 20, 0.5);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     margin: auto;
 }
 h2{
