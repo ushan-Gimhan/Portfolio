@@ -69,5 +69,6 @@ h2{
 @media all and (max-width: 600px) {
     .profileSec{
         flex-direction: column;
+        gap: 20px;
     }
 }

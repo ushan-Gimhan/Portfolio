@@ -26,6 +26,12 @@ h1{
     align-items: center;
     text-align: center;
     padding: 20px;
+    margin: auto;
 }
-
+@media all and (max-width:600px) {
+    .education>div{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
 
