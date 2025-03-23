@@ -17,6 +17,7 @@ h1{
 }
 .education>div>div{
     display: flex;
+    justify-content: space-evenly;
     width: 40vw;
     font-weight: bold;
     border-radius: 8px 8px 8px 8px;

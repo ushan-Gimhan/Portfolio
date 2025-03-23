@@ -1,19 +1,57 @@
 .pro{
-    background:linear-gradient(to bottom, white,black,white, black);
-    margin: 0;
+    background:linear-gradient(to bottom,white,white,black, black);
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 section>h1{
     color: blue;
     text-align: center;
 }
-.pro>div{
-    display: grid;
-    border: 3px solid sienna;
-    grid-template-columns: var(1,1fr);
-    grid-template-rows: repeat(2,1fr);
+h2{
+    color: blue;
 }
 .project{
-    border: 3px solid rebeccapurple;
+    height: 160vh;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+
 }
+.project1{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    color: white;
+    position: relative;
+}
+.project2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;  /* Ensures space distribution */
+    color: white;
+    margin: auto;
+}
+.project1>div{
+    height:fit-content;
+    width: fit-content;
+    position: absolute;
+    margin: auto;
+}
+.project>div>div{
+    position: relative;
+    margin:auto;
+
+}
+.backgroud{
+    border-radius: 8px 8px 8px 8px;
+    /*box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);*/
+    background: rgba(18, 19, 20, 0.5);
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
