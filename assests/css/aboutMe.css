@@ -2,7 +2,7 @@ section{
     gap: 20px;
 }
 .aboutMe {
-    background: linear-gradient(to bottom, black, black, white);
+    background: linear-gradient(to bottom, black, #333, white);
     width: 100%;
 }
 

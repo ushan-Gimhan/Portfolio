@@ -64,13 +64,5 @@ section>header>div.menu>nav>a {
 .menu>nav>a:hover{
     color: blue;
 }
-img:hover{
-    border: 5px solid blue;
 
-}
-/*.menu:hover{*/
-/*    background: black;*/
-/*    color: white;*/
-/*    border-radius: 5px;*/
-/*}*/
 
