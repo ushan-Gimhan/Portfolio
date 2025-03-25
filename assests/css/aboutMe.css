@@ -2,7 +2,7 @@ section{
     gap: 20px;
 }
 .aboutMe {
-    background: linear-gradient(to bottom, black, #333, white);
+    background: linear-gradient(to bottom, black, black, white);
     width: 100%;
 }
 
@@ -73,7 +73,8 @@ section{
 }
 
 section.aboutMe > h1 {
-    color:#6495ED;
+    color:blue;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -85,7 +86,7 @@ section {
     overflow: hidden;
 }
 .changeC{
-    color:#1E90FF;
+    color:blue;
 }
 .paragraph>a{
     color:#1877F2;
@@ -105,7 +106,7 @@ section {
     }
 
     .about > div.paragraph {
-        font-size: 20px;
+        font-size: 25px;
         width: 100%;
         padding: 10px;
     }
@@ -115,7 +116,7 @@ section {
     }
 
     .about > div > img {
-        width: 20px;
+        width: 15px;
     }
     .h1{
         text-align: center;
@@ -126,11 +127,18 @@ section {
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 320px) {
     .about > div.paragraph {
-        font-size: 18px;
+        font-size: 20px;
     }
+
     .about > div > img {
+        width: fit-content;
+        height: fit-content;
         max-width: 200px;
     }
+    .aboutMe {
+        background: linear-gradient(to bottom, black, black, black,white);
+    }
+
 }

@@ -71,7 +71,6 @@
 @media all and (max-width: 600px) {
     .homePage{
         flex-direction:column-reverse;
-        border: 5px solid #1E90FF;
     }
     .leftSide{
         display: flex;
