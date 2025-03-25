@@ -33,6 +33,14 @@ h1{
     .education>div{
         flex-direction: column;
         gap: 20px;
+        justify-content: space-between;
+        font-size: 8px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
     }
 }
 

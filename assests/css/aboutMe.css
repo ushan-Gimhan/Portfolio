@@ -90,7 +90,7 @@ section {
     }
 
     .about > div {
-        width: 100%;
+        /*width: fit-content;*/
         min-height: auto;
         height: auto;
     }

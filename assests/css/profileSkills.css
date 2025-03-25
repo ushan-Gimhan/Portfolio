@@ -71,4 +71,8 @@ h2{
         flex-direction: column;
         gap: 20px;
     }
+    .profileSec>div{
+        width: fit-content;
+        height: fit-content;
+    }
 }
