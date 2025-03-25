@@ -54,6 +54,9 @@
 .icons{
     display: block;
 }
+.nameTag>img{
+    animation: nameTagIcon 4s ease-out forwards;
+}
 /*.homePage>div.verticalBar{*/
 /*    border-left:3px solid blue;*/
 /*    left: 5%;*/
@@ -101,6 +104,14 @@
         opacity: 1;
     }
     100% {
-        width: 35vw;
+        width: 25vw;
+    }
+}
+@keyframes nameTagIcon {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
