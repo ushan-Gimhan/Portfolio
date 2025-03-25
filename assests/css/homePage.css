@@ -17,9 +17,7 @@
     background-color: blue;
     border: none;
     margin: 20px auto;
-    animation-name:lines;
-    animation-duration: 3s;
-    transition-timing-function: ease;
+    animation: lines 3s ease-out forwards;
 }
 .firstLine{
     font-weight: bold;
@@ -95,10 +93,14 @@
     }
 }
 @keyframes lines  {
-    0%{
+    0% {
         width: 0px;
+        opacity: 0;
     }
-    100%{
-        width: 35px;
-         }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 35vw;
+    }
 }
