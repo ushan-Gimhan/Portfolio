@@ -11,63 +11,15 @@
     background-color: #b8c6db;
     background-image: linear-gradient(315deg, #b8c6db, #f5f7fa 74%);
 }
-/*.homePage>img{*/
-/*    right: 0;*/
-/*    position: absolute;*/
-/*}*/
-
-/*section >header> nav {*/
-/*    background: black;*/
-/*    right: 50vw;*/
-/*    text-align: right;*/
-/*    padding: 10px 20px;*/
-/*    height: 40px;*/
-/*}*/
-/*section>header>nav>a{*/
-/*    text-decoration: none;*/
-/*    padding-right: 10px;*/
-/*    font-size: 18px;*/
-/*    color: white;*/
-/*    font-weight: bold;*/
-/*}*/
-/*section>header>nav>img{*/
-/*    background-color: white;*/
-/*    width: 40px;*/
-/*    height: 40px;*/
-/*    position: absolute;*/
-/*    top: 5px;*/
-/*    left: 10px;*/
-/*}*/
-/*body>section:first-child(1){*/
-/*    background: darkred;*/
-/*}*/
-/*section.homePage>p{*/
-/*    color: blue;*/
-/*    background: white;*/
-/*    font-weight: bold;*/
-/*    left: 300px;*/
-/*    right: 300px;*/
-/*    top: 20px;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*section>p>h1{*/
-/*    color: black;*/
-/*    font-weight: bold;*/
-/*}*/
-/*body>section.homePage>div>img{*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*}*/
 .middleLine{
     width: 35vw;
     height: 2px;
     background-color: blue;
     border: none;
     margin: 20px auto;
-    animation: fadeInAnimation 3s;
+    animation-name:lines;
+    animation-duration: 3s;
+    transition-timing-function: ease;
 }
 .firstLine{
     font-weight: bold;
@@ -95,22 +47,58 @@
     align-items: center;
     position: absolute;
     left: 5%;
-    bottom: 0;
+    top: 400px;
+    animation-name:icons;
+    animation-duration: 3s;
+    transition-timing-function: ease;
+
 }
-.homePage>div.verticalBar{
-    border-left:3px solid blue;
-    left: 5%;
-    height: 25vh;
-    width: 2px;
-    background: blue;
-    position: absolute;
+.icons{
+    display: block;
 }
-@media all and (max-width: 920px) {
+/*.homePage>div.verticalBar{*/
+/*    border-left:3px solid blue;*/
+/*    left: 5%;*/
+/*    height: 25vh;*/
+/*    width: 2px;*/
+/*    background: blue;*/
+/*    position: absolute;*/
+/*    animation-name:lines;*/
+/*    animation-duration: 3s;*/
+/*    transition-timing-function: ease;*/
+/*}*/
+@media all and (max-width: 600px) {
+    .homePage{
+        flex-direction:column-reverse;
+        border: 5px solid #1E90FF;
+    }
     .leftSide{
-        flex-direction: column;
+        display: flex;
+        transform: translateX(-50%);
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        left: 5%;
+        bottom: 150px;
     }
     .nameTag{
-        font-size: 20px;
+        width: fit-content;
+        font-size: 5px;
     }
-
+}
+@keyframes icons{
+    from {
+        top: 0;
+    }
+    to {
+        bottom: 150px;
+    }
+}
+@keyframes lines  {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 35px;
+         }
 }
