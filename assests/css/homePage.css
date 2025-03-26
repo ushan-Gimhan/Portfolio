@@ -45,7 +45,7 @@
     align-items: center;
     position: absolute;
     left: 5%;
-    top: 400px;
+    top: 450px;
     animation-name:icons;
     animation-duration: 3s;
     transition-timing-function: ease;
@@ -71,6 +71,7 @@
 @media all and (max-width: 600px) {
     .homePage{
         flex-direction:column-reverse;
+        height: 65vh;
     }
     .leftSide{
         display: flex;
