@@ -132,7 +132,7 @@ section {
 
 @media all and (max-width: 600px) {
     .about > div.paragraph {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .about > div > img {
