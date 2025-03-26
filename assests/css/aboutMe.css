@@ -34,7 +34,7 @@ section{
 }
 .about > div.im {
     width: 100%;
-    height: 55vh;
+    height: 30vh;
     font-weight: bold;
     color: white;
     font-size: 20px;
@@ -62,8 +62,6 @@ section{
 }
 
 .about > div > p {
-    width: fit-content;
-    height: fit-content;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -112,7 +110,7 @@ section {
     .about > div.paragraph {
         font-size: 20px;
         width: 100%;
-        height: 10vh;
+        height: 70vh;
         padding: 10px;
     }
     .about > div.paragraph>p {
@@ -138,8 +136,6 @@ section {
     }
 
     .about > div > img {
-        width: fit-content;
-        height: fit-content;
         max-width: 200px;
     }
     .aboutMe {
