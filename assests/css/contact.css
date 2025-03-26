@@ -1,98 +1,121 @@
-.conPage{
-    background: linear-gradient(to bottom,white,#333, black);
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --text-muted: #aaaaaa;
 }
-.contact{
+
+.contact {
+    background: linear-gradient(to bottom, white, black);
+    max-width:100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
-.contact>div{
-    width: 75%;
-    height: 100vh;
-    text-align: center;
-}
-.contact>div>div>form{
-    width:100%;
-    height: fit-content;
-    border: 5px solid blue;
-}
-.contact{
-    display: flex;
-    min-height: 100vh;
-    /*background: linear-gradient(to bottom, white 0%, #f0f0f0 50%, #333 75%, black 100%);*/
-    padding: 50px;
-    box-sizing: border-box;
-}
-.massageMe {
-    flex: 1;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    background: rgba(18, 19, 20, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-    margin-right: 30px;
-}
-.massageMe h2 {
-    text-align: center;
-    color: blue;
-    margin-bottom: 20px;
-}
-.massageMe form {
+
+.massageMe{
     display: flex;
     flex-direction: column;
+    width: 60%;
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2c2c2c 100%);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    bottom: 200px;
 }
+
+.massageMe {
+    padding: 50px;
+    gap: 50px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.massageMe h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 .massageMe input,
 .massageMe textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+    width: 60%;
+    padding: 12px 15px;
+    background-color: rgba(50, 50, 50, 0.7);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.massageMe input:focus,
+.massageMe textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+}
+
+.massageMe textarea {
+    resize: vertical;
+    min-height: 150px;
 }
 .massageMe button {
-    background-color: darkblue;
+    width: 50%;
+    padding: 12px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    align-items: center;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
 }
+
 .massageMe button:hover {
-    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
-.contact > div:last-child {
-    flex: 1;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    background: rgba(18, 19, 20, 0.5);
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
+
+.information {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2c2c2c 100%);
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    border-radius: 30%;
+    font-weight: bold;
 }
-.contact > div:last-child h3 {
+
+.information h3 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
-.contact > div:last-child div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+
+.information>div img {
+    margin-right: 15px;
+    filter: brightness(0) invert(1) opacity(0.7);
+    transition: filter 0.3s ease;
 }
-.contact > div:last-child img {
-    margin-right: 10px;
-}
-.contact-info-item {
-    display: flex;
-    align-items: center;
-}
-@media all and(max-width: 600px) {
+
+@media all and (max-width: 768px) {
     .contact{
         flex-direction: column;
         gap: 20px;
-        justify-content: space-between;
     }
 
+    /*.massageMe,*/
+    /*.contact-info {*/
+    /*    padding: 30px;*/
+    /*}*/
 }

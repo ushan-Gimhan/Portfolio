@@ -34,7 +34,7 @@ section{
 }
 .about > div.im {
     width: 100%;
-    height: 30vh;
+    height: 55vh;
     font-weight: bold;
     color: white;
     font-size: 20px;
@@ -110,7 +110,7 @@ section {
     .about > div.paragraph {
         font-size: 20px;
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         padding: 10px;
     }
     .about > div.paragraph>p {
