@@ -6,9 +6,12 @@
     --text-color: #ffffff;
     --text-muted: #aaaaaa;
 }
+.con{
+    background-color:#2c2c2c;
+}
 
 .contact {
-    background: linear-gradient(to bottom, white, black);
+    background: #2c2c2c;
     max-width:100%;
     display: flex;
     justify-content: space-between;
