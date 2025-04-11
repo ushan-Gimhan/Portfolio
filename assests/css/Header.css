@@ -29,6 +29,7 @@ section>header>div.menu {
     position: absolute;
     right: 5%;
     top: 50%;
+    border-radius: 30px;
     transform: translate(-5%, -50%);
     background: linear-gradient(90deg, #121314, #22262b 59%, #31363b);
     padding: 20px;
