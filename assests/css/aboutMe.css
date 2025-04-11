@@ -1,3 +1,4 @@
+
 section{
     gap: 20px;
 }
@@ -62,7 +63,7 @@ h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid blue;
+    border: 5px solid #008CFF;
     position: absolute;
     transition: transform 0.3s ease-in-out;
 }

@@ -17,7 +17,7 @@
     position: relative;
 }
 .tech>div>div>img{
-    width: 120px;;
+    width: 90px;;
     aspect-ratio: 1/1;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
     font-weight: bold;
 }
 .tech>div>div>img{
-    border: 5px solid blue;
+    border: 5px solid #008CFF;
 }
 @media all and (max-width: 600px) {
     .tech>div{
