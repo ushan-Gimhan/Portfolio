@@ -10,6 +10,17 @@
     background-color:#2c2c2c;
 }
 
+.con>h1{
+    color:#d6eaff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 8px rgba(214, 234, 255, 0.4);
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
 .contact {
     background: #2c2c2c;
     max-width:100%;
@@ -92,6 +103,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 2px solid #008CFF;
     color: white;
     border-radius: 20%;
     font-weight: bold;
@@ -109,6 +121,14 @@
     margin-right: 15px;
     filter: brightness(0) invert(1) opacity(0.7);
     transition: filter 0.3s ease;
+}
+.discrip{
+    width: fit-content;
+    height: 60px;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    border: 3px solid #3498db;
+
 }
 
 @media all and (max-width: 768px) {

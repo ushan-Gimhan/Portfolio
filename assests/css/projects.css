@@ -21,6 +21,16 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+.pro>h1{
+    color:#d6eaff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
 
 
 .project1 {
@@ -52,6 +62,7 @@ h2 {
     background: rgba(18, 19, 20, 0.5);
     color: white;
     text-align: center;
+    border: 1px solid #008CFF;
     align-items: center;
     padding: 20px;
     max-width: 600px;
