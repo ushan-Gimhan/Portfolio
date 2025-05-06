@@ -1,17 +1,42 @@
-.homePage{
+.video-background video,
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    z-index: -1;
+}
+
+.homePage {
     font-family: "Fira Code", monospace;
     height: 95vh;
     position: relative;
+    overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 5vh;
-    background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db, #f5f7fa 74%);
+    /* Removed background image so video shows */
+    /* background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db, #f5f7fa 74%); */
 }
-.middleLine{
+
+.middleLine {
     width: 35vw;
     height: 2px;
     background-color: blue;
@@ -19,61 +44,46 @@
     margin: 20px auto;
     animation: lines 3s ease-out forwards;
 }
-.firstLine{
+
+.firstLine {
     font-weight: bold;
     font-size: 15px;
     color: blue;
 }
-.secondLine{
+
+.secondLine, .thirdLine, .forthLine {
     font-size: 40px;
     text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
     color: black;
 }
-.thirdLine{
-    font-size: 40px;
-    text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
-    color: black;
-}
-.forthLine{
-    font-size: 40px;
-    text-shadow: rgba(0, 0, 0, .15) 1.95px 1.95px 2.6px;
-    color: black;
-}
-.leftSide{
+
+.leftSide {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     left: 5%;
     top: 450px;
-    animation-name:icons;
+    animation-name: icons;
     animation-duration: 3s;
     transition-timing-function: ease;
-
 }
-.icons{
+
+.icons {
     display: block;
 }
-.nameTag>img{
+
+.nameTag > img {
     animation: nameTagIcon 4s ease-out forwards;
 }
-/*.homePage>div.verticalBar{*/
-/*    border-left:3px solid blue;*/
-/*    left: 5%;*/
-/*    height: 25vh;*/
-/*    width: 2px;*/
-/*    background: blue;*/
-/*    position: absolute;*/
-/*    animation-name:lines;*/
-/*    animation-duration: 3s;*/
-/*    transition-timing-function: ease;*/
-/*}*/
+
 @media all and (max-width: 600px) {
-    .homePage{
-        flex-direction:column-reverse;
+    .homePage {
+        flex-direction: column-reverse;
         height: 85vh;
     }
-    .leftSide{
+
+    .leftSide {
         display: flex;
         transform: translateX(-50%);
         flex-direction: row;
@@ -82,12 +92,14 @@
         left: 5%;
         bottom: 150px;
     }
-    .nameTag{
+
+    .nameTag {
         width: fit-content;
         font-size: 5px;
     }
 }
-@keyframes icons{
+
+@keyframes icons {
     from {
         top: 0;
     }
@@ -95,7 +107,8 @@
         bottom: 150px;
     }
 }
-@keyframes lines  {
+
+@keyframes lines {
     0% {
         width: 0px;
         opacity: 0;
@@ -107,8 +120,9 @@
         width: 25vw;
     }
 }
+
 @keyframes nameTagIcon {
-    from{
+    from {
         opacity: 0;
     }
     to {

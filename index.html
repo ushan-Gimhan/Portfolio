@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ushan Gimhan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assests/css/normalization.css">
     <link rel="stylesheet" href="assests/css/homePage.css">
     <link rel="stylesheet" href="assests/css/aboutMe.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="assests/css/education.css">
     <link rel="stylesheet" href="assests/css/contact.css">
     <link rel="stylesheet" href="assests/css/Header.css">
+    <link rel="stylesheet" href="assests/css/Assignments.css">
     <link rel="stylesheet" href="assests/css/footer.css">
     <link rel="icon" type="image/png" href="assests/images/images.ico">
 
@@ -44,7 +46,11 @@
 </section>
 
 <section>
-    <div class="homePage">
+    <div class="homePage animated-bg video-background">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="assests/Videos/35573-407595474_small.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
         <div class="leftSide">
             <div class="leftImg">
                 <dl>
@@ -62,6 +68,7 @@
             <h1 class="forthLine">Student</h1>
             <img src="assests/images/icons8-double-down-50.png " height="65" width="65">
         </div>
+
     </div>
 </section>
 
@@ -92,8 +99,8 @@
 
 <section class="profile">
     <h1 id="skills">PROFESSIONAL SKILLS</h1>
-    <div class="profileSec">
-        <div class="skillOne">
+    <div class="profileSec" >
+        <div class="skillOne" data-aos="flip-left">
             <h2>Problem Solving</h2>
 
             <p>
@@ -110,7 +117,7 @@
             </p>
 
         </div>
-        <div class="skillTwo">
+        <div class="skillTwo" data-aos="flip-left">
             <h2>Designing Skills</h2>
 
             <p>
@@ -128,7 +135,7 @@
             </p>
 
         </div>
-    <div class="skillThree">
+    <div class="skillThree" data-aos="flip-left">
         <h2>Logical Skills</h2>
 
             <p>
@@ -149,31 +156,31 @@
 <section class="tech">
     <h1 id="tec">TECHNICAL SKILLS</h1>
     <div>
-        <div>
+        <div data-aos="zoom-in-up">
             <img src="assests/images/img.png" style="; object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-right">
             <img src="assests/images/52ae5db3-1eb2-4e5d-b96d-f011bca9f579.jpg" style="; object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-up">
             <img src="assests/images/c7864db7-4363-4130-b152-f7521e5e2a85.jpg" style= "object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-right">
             <img src="assests/images/a8690be0-8a4f-4901-af50-483674f6b73f.jpg" style=" ; object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-up">
             <img src="assests/images/0c6a6a07-b92d-4657-af73-129b614290ea.jpg" style=" ; object-fit: cover; ">
         </div>
-       <div>
+       <div data-aos="zoom-in-right">
            <img src="assests/images/img_2.png" style="; object-fit: cover; ">
        </div>
-        <div>
+        <div data-aos="zoom-in-up">
             <img src="assests/images/img_1.png" style="; object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-right">
             <img src="assests/images/img_3.png" style="; object-fit: cover; ">
         </div>
-        <div>
+        <div data-aos="zoom-in-up">
             <img src="assests/images/img_4.png" style=" object-fit: cover; ">
         </div>
     </div>
@@ -181,7 +188,7 @@
 
 <section class="pro">
     <h1 id="projects">PROJECTS</h1>
-    <div class="project">
+    <div class="project" data-aos="flip-left">
         <div class="project1">
             <div class="image">
                 <img src="assests/images/p1.jpg.png" height="400" width="400">
@@ -199,7 +206,7 @@
                 <p><img src="assests/images/gitBlue.png" height="45" width="45"><u>Cliked to get Source Code!!</u></p>
             </div>
         </div>
-        <div class="project2">
+        <div class="project2" data-aos="flip-right">
             <div class="image"><img src="assests/images/p2.png" height="400" width="400">
             </div>
             <div class="backgroud">
@@ -231,6 +238,88 @@
             <p>Graduate Diploma In Software
                 Engineering (GDSE)
             </p>
+        </div>
+    </div>
+</section>
+<section class="profile" id="assignments">
+    <h1>MY ASSIGNMENTS</h1>
+
+    <div class="assignmentContainer">
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/AsiignMent1.png" alt="Assignment 1">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 1</h2>
+                <p>Web Application Development</p>
+                <a href="https://github.com/ushan-Gimhan/CSS-Assignments/tree/main/Assignment03" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/KingtRider.png" alt="Assignment 2">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 2</h2>
+                <p>Create Knight Rider Animation</p>
+                <a href="https://github.com/ushan-Gimhan/KnightRider-Animation" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/pos.png" alt="Assignment 3">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 3</h2>
+                <p>POS System</p>
+                <a href="https://github.com/ushan-Gimhan/Pos-System" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/carAnimation.png" alt="Assignment 4">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 4</h2>
+                <p>Web Animation Development</p>
+                <a href="https://github.com/ushan-Gimhan/JS-Que" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/JsQuary.png" alt="Assignment 5">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 5</h2>
+                <p>JS Quary Animation</p>
+                <a href="https://github.com/ushan-Gimhan/JS-Que" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/POsitions.png" alt="Assignment 6">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 6</h2>
+                <p>Css Assignment</p>
+                <a href="https://github.com/ushan-Gimhan/CSS-Assignments/tree/main/Assignment03" class="viewBtn" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="assignment">
+            <div class="assignmentImage">
+                <img src="assests/images/Assignments/webApplication.png" alt="Assignment 7">
+            </div>
+            <div class="assignmentInfo">
+                <h2>Assignment 7</h2>
+                <p>Small Web Application</p>
+                <a href="#" class="viewBtn" target="_blank">View Project</a>
+            </div>
         </div>
     </div>
 </section>
@@ -294,10 +383,17 @@
                 <p>Copyright © 2025 Ushan Gimhan.</p>
             </div>
             <div class="soursecode">
-                <img src="assests/images/icons8-github-50.png"><p>CheckOut The SourseCode!</p>
+                <a href="https://github.com/ushan-Gimhan/Portfolio" target="_blank" rel="noopener noreferrer">
+                    <img src="assests/images/icons8-github-50.png" alt="GitHub Icon">
+                    <p>CheckOut The Source Code!</p>
+                </a>
             </div>
 
         </div>
     </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -43,6 +43,12 @@ h1{
 .education>div>div>img{
     border-radius: 8px 8px 8px 8px;
 }
+.education>div>div:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 140, 255, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
 @media all and (max-width:600px) {
     .education>div{
         flex-direction: column;

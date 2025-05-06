@@ -68,7 +68,12 @@ h2 {
     max-width: 600px;
     flex-wrap: wrap;
 }
-
+.project>div>div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 140, 255, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
 @media (max-width: 768px) {
     .project {
         flex-direction: column;
